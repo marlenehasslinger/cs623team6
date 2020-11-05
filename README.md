@@ -12,7 +12,7 @@ Team members: Junhe Zhang, Marlene Hasslinger
 SQL code (tested in postgre without syntax errors):
 
 ## CREATE TABLE AND INSERT DATA
-CREATE TABLE Product (ProdId CHAR(10), PName VARCHAR(30), Price DECIMAL);
+```CREATE TABLE Product (ProdId CHAR(10), PName VARCHAR(30), Price DECIMAL);
 ALTER TABLE Product ADD CONSTRAINT pk_product PRIMARY KEY (ProdId);
 
 INSERT INTO Product VALUES ('p1', 'tape', 2.5);
@@ -36,6 +36,6 @@ INSERT INTO Stock VALUES ('p2', 'd4', 1500);
 INSERT INTO Stock VALUES ('p2', 'd1', -400);
 INSERT INTO Stock VALUES ('p2', 'd2', 2000);
 ALTER TABLE Stock ADD CONSTRAINT fk_stock_prodId_product  FOREIGN KEY (ProdId) REFERENCES Product(ProdId) ON DELETE CASCADE; 
-ALTER TABLE Stock ADD CONSTRAINT fk_stock_depId_Depot  FOREIGN KEY (DepId) REFERENCES Depot(DepId) ON DELETE CASCADE; 
+ALTER TABLE Stock ADD CONSTRAINT fk_stock_depId_Depot  FOREIGN KEY (DepId) REFERENCES Depot(DepId) ON DELETE CASCADE;```
 
  
