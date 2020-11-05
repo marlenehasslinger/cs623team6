@@ -11,7 +11,7 @@ Team members: Junhe Zhang, Marlene Hasslinger
 
 SQL code (tested in postgre without syntax errors):
 
-## CREATE TABLE AND INSERT DATA
+## Create tables and insert data
 ```CREATE TABLE Product (ProdId CHAR(10), PName VARCHAR(30), Price DECIMAL);
 ALTER TABLE Product ADD CONSTRAINT pk_product PRIMARY KEY (ProdId);
 
