@@ -13,17 +13,23 @@ Team members: Junhe Zhang, Marlene Hasslinger
 
 ### Rule 0:
 Product(<ins>#prodID</ins>, price, pname,
+
 Depot(<ins>#depID</ins>, addr, volume,
+
 Stock(<ins>#prodID</ins>, <ins>#depID</ins>, quantity,
 
 ### Rule 3:
 Stock(<ins>#prodID</ins>, <ins>#depID</ins>, quantity,
+
 Depot(<ins>#depID</ins>, addr, volume,
+
 FK(Stock) = (depID)
 
 ### Rule 3:
 Stock(<ins>#prodID</ins>, <ins>#depID</ins>, quantity,
+
 Product(<ins>#prodID</ins>, price, pname,
+
 FK(Stock) = (prodID)
 
 ## Create tables and insert data
