@@ -9,7 +9,22 @@ Team members: Junhe Zhang, Marlene Hasslinger
 ![erd](https://github.com/marlenehasslinger/cs623team6/blob/main/erdFinalProject.jpeg?raw=true)
 
 
-SQL code (tested in postgre without syntax errors):
+## Set of relations
+
+### Rule 0:
+Product(<ins>#prodID</ins>, price, pname,
+Depot(<ins>#depID</ins>, addr, volume,
+Stock(<ins>#prodID</ins>, <ins>#depID</ins>, quantity,
+
+### Rule 3:
+Stock(<ins>#prodID</ins>, <ins>#depID</ins>, quantity,
+Depot(<ins>#depID</ins>, addr, volume,
+FK(Stock) = (depID)
+
+### Rule 3:
+Stock(<ins>#prodID</ins>, <ins>#depID</ins>, quantity,
+Product(<ins>#prodID</ins>, price, pname,
+FK(Stock) = (prodID)
 
 ## Create tables and insert data
 ```CREATE TABLE Product (ProdId CHAR(10), PName VARCHAR(30), Price DECIMAL);
