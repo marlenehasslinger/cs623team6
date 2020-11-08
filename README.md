@@ -33,7 +33,8 @@ Product(<ins>#prodID</ins>, price, pname,
 FK(Stock) = (prodID)
 
 ## Create tables and insert data
-```CREATE TABLE Product (ProdId CHAR(10), PName VARCHAR(30), Price DECIMAL);
+```
+CREATE TABLE Product (ProdId CHAR(10), PName VARCHAR(30), Price DECIMAL);
 ALTER TABLE Product ADD CONSTRAINT pk_product PRIMARY KEY (ProdId);
 
 INSERT INTO Product VALUES ('p1', 'tape', 2.5);
