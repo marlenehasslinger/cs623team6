@@ -18,14 +18,14 @@ Depot(<ins>#depID</ins>, addr, volume,
 
 Stock(<ins>#prodID</ins>, <ins>#depID</ins>, quantity,
 
-### Rule 3:
+### Stock - Depot (Rule 3):
 Stock(<ins>#prodID</ins>, <ins>#depID</ins>, quantity,
 
 Depot(<ins>#depID</ins>, addr, volume,
 
 FK(Stock) = (depID)
 
-### Rule 3:
+### Stock - Product (Rule 3):
 Stock(<ins>#prodID</ins>, <ins>#depID</ins>, quantity,
 
 Product(<ins>#prodID</ins>, price, pname,
