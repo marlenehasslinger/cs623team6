@@ -1,6 +1,7 @@
 # cs623team6
 
 Team members: Junhe Zhang, Marlene Hasslinger
+Video: https://youtu.be/RVVw0pOJ8-M
 
 ## Schema
 ![schema](https://github.com/marlenehasslinger/cs623team6/blob/main/schema.png?raw=true)
